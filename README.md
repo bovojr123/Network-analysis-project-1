@@ -27,6 +27,7 @@ HTTP evidence: Followed the HTTP stream for the suspicious TCP stream and found 
 	•	Downloaded file origin: Hostname referenced in captured requests corresponds to foodsgoodforliver.com (the domain that served the file).
 	•	Malware quick check: The downloaded artifact was submitted to VirusTotal and returned 58/72 detections (high risk).
 	•	Victim identification: Using the nbns display filter (nbns) allowed recovery of the NetBIOS/hostname information for the victim machine that received the file.
+	
 Conclusion & recommendations
 	•	The capture shows a suspicious file transfer to 10.4.1.101 originating from 94.103.84.245 and associated with the domain foodsgoodforliver.com. VirusTotal results (58/72) indicate the file is likely malicious.
 	•	Immediate actions
