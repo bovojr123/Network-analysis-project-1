@@ -1,3 +1,4 @@
+![IMG_8901](https://github.com/user-attachments/assets/bd6a44ac-6823-416d-b3c3-1a8ca78d0e01)
 # Network-analysis-project-1
 Network analysis report: PCAP Using Wireshark
 On 2025-02-24, I analyzed a 15 minute PCAP (17:02:19–17:17:22). The highest volume of traffic to the victim (10.4.1.101) originated from 94.103.84.245. Following HTTP streams revealed an HTTP GET that delivered a file hosted on foodsgoodforliver.com. The file was submitted to VirusTotal and returned a detection score of 58/72. The captured HTTP stream also shows an intermediary indicating mitmproxy behavior. Findings suggest a suspicious file download to the victim host; further malware analysis is recommended.
