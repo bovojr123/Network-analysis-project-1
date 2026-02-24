@@ -15,7 +15,10 @@ Observations & methodology
 	5.	Used NetBIOS Name Service filters (nbns) to identify the local victim hostname.
 	6.	Retrieved the downloaded file and uploaded it to VirusTotal for a quick verdict.
 
-⸻
+⸻![IMG_8906](https://github.com/user-attachments/assets/38545760-af8f-46df-b6be-28cae82acf01)
+![IMG_8908](https://github.com/user-attachments/assets/b314ebe5-02b8-4920-bbc9-6d2a98298899)
+![IMG_8903](https://github.com/user-attachments/assets/2d764420-b831-4fe0-8e23-2b09da73e440)
+
 
 Key findings 
 	•	Top talker: 94.103.84.245 → 10.4.1.101 (largest byte count during the capture window).
@@ -28,7 +31,13 @@ HTTP evidence: Followed the HTTP stream for the suspicious TCP stream and found 
 	•	Downloaded file origin: Hostname referenced in captured requests corresponds to foodsgoodforliver.com (the domain that served the file).
 	•	Malware quick check: The downloaded artifact was submitted to VirusTotal and returned 58/72 detections (high risk).
 	•	Victim identification: Using the nbns display filter (nbns) allowed recovery of the NetBIOS/hostname information for the victim machine that received the file.
-	
+	![IMG_8905](https://github.com/user-attachments/assets/edc1b53a-5517-46bc-854f-ebdec8f61da3)
+![IMG_8914](https://github.com/user-attachments/assets/ec431b3a-eb97-4620-8d2a-61cb31590315)
+![IMG_8913](https://github.com/user-attachments/assets/4720f9e4-4296-4ea4-a797-36b71f7b423d)
+![IMG_8911](https://github.com/user-attachments/assets/3e2514cf-a2e3-44ad-9190-03b6f45f8fa4)
+![IMG_8909](https://github.com/user-attachments/assets/4d4aa61e-52be-43c7-bfd7-8c93fef9ef37)
+![IMG_8907](https://github.com/user-attachments/assets/e368a6d9-d0e1-4ed2-ae5d-91169b4a1155)
+
 Conclusion & recommendations
 	•	The capture shows a suspicious file transfer to 10.4.1.101 originating from 94.103.84.245 and associated with the domain foodsgoodforliver.com. VirusTotal results (58/72) indicate the file is likely malicious.
 	•	Immediate actions
